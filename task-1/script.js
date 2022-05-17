@@ -1,5 +1,5 @@
 let box = document.querySelector('.box');
-let runner = document.querySelector('.BEGUNOK')
+let runner = document.querySelector('.BEGUNOK');
 
 function debouns(fn, ms) {
 	let timeout;
@@ -45,7 +45,7 @@ function createTable(x) {
 				elem.classList.add('color');
 				arrayColor.push(elem);
 			}
-		})
+		});
 
 		arrayColor.forEach((i) => {
 			if (elem.textContent > i.textContent && elem.textContent[0] === i.textContent[0]) {
@@ -67,17 +67,18 @@ function animation(prop) {
 createTable(4);
 
 runner.addEventListener('input', debouns(() => {
-	n = Number(runner.value)
+	n = Number(runner.value);
 
-	let arrayRow = document.querySelectorAll('.row')
+	let arrayRow = document.querySelectorAll('.row');
 	arrayRow.forEach((a) => {
 		a.remove();
-	})
+	});
 	createTable(n);
 	animation('remove');
 }, 400));
 
 runner.addEventListener('input', () => animation());
 
-animation()
+animation();
+
 	// TODO спросить у Марка, почему ругается, если в аргумент функции animation передвать не строку, ругается

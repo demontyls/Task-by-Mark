@@ -63,15 +63,19 @@ body {
     0% {
         transform: rotateZ(0deg);
     }
+
     10% {
         transform: rotateZ(-1deg);
     }
+
     20% {
         transform: rotateZ(-1.5deg);
     }
+
     30% {
         transform: rotateZ(0deg);
     }
+    
     40% {
         transform: rotateZ(-2.5deg);
     }
