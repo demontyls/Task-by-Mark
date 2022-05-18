@@ -79,6 +79,6 @@ runner.addEventListener('input', debouns(() => {
 
 runner.addEventListener('input', () => animation());
 
-animation();
+// animation();
 
 	// TODO спросить у Марка, почему ругается, если в аргумент функции animation передвать не строку, ругается
