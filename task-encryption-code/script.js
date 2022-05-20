@@ -39,10 +39,5 @@ function decryptionCode(array, arraylength, code) {
   console.log( `${array} --- Присутствие шифровки: ${finalAnswer}`);
 }
 
-
-
 decryptionCode(arrayCipherSecond, arrayLenghtSecond, codeLenghtSecond);
 decryptionCode(arrayCipher, arrayLenght, codeLenght);
-
-// 1. Не знал как итерироваться по строке, гугли способо перебоа
-//
