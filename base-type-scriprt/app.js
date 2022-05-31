@@ -1,4 +1,4 @@
-var arrayFibonacci = [1, 1], arrayFactorial = [], defoltValue = 5;
+var arrayFibonacci = [1, 1], arrayFactorial = [], defaultValue = 5;
 var i = 0;
 function findeFibonacciSeries(n) {
     for (i; i < n; i++) {
@@ -12,5 +12,5 @@ function findeFactorialSerise(n) {
         n *= i;
     return console.log(n);
 }
-findeFactorialSerise(defoltValue);
-findeFibonacciSeries(defoltValue);
+findeFactorialSerise(defaultValue);
+findeFibonacciSeries(defaultValue);

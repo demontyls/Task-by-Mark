@@ -1,6 +1,6 @@
 const arrayFibonacci:number[] = [1,1],
       arrayFactorial:number[] = [],
-      defoltValue: number = 5;
+      defaultValue: number = 5;
 let i:number = 0;
 
 function findeFibonacciSeries (n:number) {
@@ -16,5 +16,5 @@ function findeFactorialSerise (n:number) {
   return console.log(n);
 }
 
-findeFactorialSerise(defoltValue);
-findeFibonacciSeries(defoltValue);
+findeFactorialSerise(defaultValue);
+findeFibonacciSeries(defaultValue);
