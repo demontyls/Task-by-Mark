@@ -1,8 +1,8 @@
-class users {
-  name: string
-  surname: string
-  age?: number
-  profession?: string
+class User {
+  name: string;
+  surname: string;
+  age?: number;
+  profession?: string;
 
 
   constructor(name, surname, age?, profession?) {
@@ -12,34 +12,34 @@ class users {
     this.profession = profession
   }
 
-  motivationWords() {
-    const goodWordArray: string[] = ['Good boy', ' Like u', ' krasava', 'MOLODETS'];
-    let goodWord: string = goodWordArray[Math.floor(Math.random() * goodWordArray.length)];
+  public motivationWords() {
+    const goodWordArray: string[] = ['Good boy', 'Like u', 'krasava', 'MOLODETS'],
+          goodWord: string = goodWordArray[Math.floor(Math.random() * goodWordArray.length)];
 
     if (this.age <= 18) {
-      let noJob: string = this.profession ? `,${goodWordArray[0]} работаешь` : ', и безработный';
-      console.log(`${this.name} еще писька не выросла ${noJob}`);
+      const additionalWord: string = this.profession ? `,${goodWordArray[0]} работаешь` : ', и безработный';
+      console.log(`${this.name} еще писька не выросла ${additionalWord}`);
     }
 
     if (!this.age || !this.profession) {
-      this.insults();
+      this.prinInsult();
     }
 
     if (this.profession && this.age >= 18) {
-      if (this.profession.toLowerCase() !== 'програмист') {
+      if (this.profession.toLowerCase() !== 'програмvист') {
         console.log(`${goodWord} ${this.name}, но не там ты работаешь`);
       } else {
         console.log(`${goodWord} ${this.name}, так деражть`);
       }
     } else if (this.age >= 18 && !this.profession) {
-      this.insults();
+      this.prinInsult();
     }
   }
 
-  insults() {
-    const insultsArray: string[] = ['loh', 'bolvan', 'mymoon'];
+  public prinInsult() {
+    const insults: string[] = ['loh', 'bolvan', 'mymoon'],
+    word: string = insults[Math.floor(Math.random() * insults.length)];
 
-    let word: string = insultsArray[Math.floor(Math.random() * insultsArray.length)];
     if (this.name.toLowerCase() === 'oleg') {
       console.log(`${this.name} -- молодец`);
     } else {
@@ -49,11 +49,11 @@ class users {
 }
 
 
-let x1 = new users('Марк', 'Glad', 25, 'Програмист');
-let x2 = new users('Олег', 'Zag', 25, 'Програмист');
-let x3 = new users('влад', 'krasava', 17, 'Работяга');
-let x4 = new users('влад', 'krasava', 17);
-let x5 = new users('Альберт', 'kracov', 28);
+let x1 = new User('Марк', 'Glad', 25, 'Программист');
+let x2 = new User('Олег', 'Zag', 25, 'Програмист');
+let x3 = new User('влад', 'krasava', 17, 'Работяга');
+let x4 = new User('влад', 'krasava', 17);
+let x5 = new User('Альберт', 'kracov', 28);
 
 x1.motivationWords();
 x2.motivationWords();
