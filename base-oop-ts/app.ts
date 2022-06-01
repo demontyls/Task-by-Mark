@@ -6,10 +6,10 @@ class User {
 
 
   constructor(name, surname, age?, profession?) {
-    this.name = name
-    this.surname = surname
-    this.age = age
-    this.profession = profession
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+    this.profession = profession;
   }
 
   public PrintMotivationWord() {
