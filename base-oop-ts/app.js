@@ -5,7 +5,7 @@ var User = /** @class */ (function () {
         this.age = age;
         this.profession = profession;
     }
-    User.prototype.PrintotivationWord = function () {
+    User.prototype.PrintMotivationWord = function () {
         var goodWordArray = ['Good boy', 'Like u', 'krasava', 'MOLODETS'], goodWord = goodWordArray[Math.floor(Math.random() * goodWordArray.length)];
         if (this.age <= 18) {
             var additionalWord = this.profession ? ",".concat(goodWordArray[0], " \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0448\u044C") : ', и безработный';
@@ -42,8 +42,8 @@ var x2 = new User('Олег', 'Zag', 25, 'Програмист');
 var x3 = new User('влад', 'krasava', 17, 'Работяга');
 var x4 = new User('влад', 'krasava', 17);
 var x5 = new User('Альберт', 'kracov', 28);
-x1.PrintotivationWord();
-x2.PrintotivationWord();
-x3.PrintotivationWord();
-x4.PrintotivationWord();
-x5.PrintotivationWord();
+x1.PrintMotivationWord();
+x2.PrintMotivationWord();
+x3.PrintMotivationWord();
+x4.PrintMotivationWord();
+x5.PrintMotivationWord();

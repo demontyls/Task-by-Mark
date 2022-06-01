@@ -12,7 +12,7 @@ class User {
     this.profession = profession
   }
 
-  public PrintotivationWord() {
+  public PrintMotivationWord() {
     const goodWordArray: string[] = ['Good boy', 'Like u', 'krasava', 'MOLODETS'],
           goodWord: string = goodWordArray[Math.floor(Math.random() * goodWordArray.length)];
 
@@ -55,8 +55,8 @@ let x3 = new User('влад', 'krasava', 17, 'Работяга');
 let x4 = new User('влад', 'krasava', 17);
 let x5 = new User('Альберт', 'kracov', 28);
 
-x1.PrintotivationWord();
-x2.PrintotivationWord();
-x3.PrintotivationWord();
-x4.PrintotivationWord();
-x5.PrintotivationWord();
+x1.PrintMotivationWord();
+x2.PrintMotivationWord();
+x3.PrintMotivationWord();
+x4.PrintMotivationWord();
+x5.PrintMotivationWord();
