@@ -6,9 +6,9 @@ var User = /** @class */ (function () {
         this.profession = profession;
     }
     User.prototype.PrintMotivationWord = function () {
-        var goodWordArray = ['Good boy', 'Like u', 'krasava', 'MOLODETS'], goodWord = goodWordArray[Math.floor(Math.random() * goodWordArray.length)];
+        var goodWords = ['Good boy', 'Like u', 'krasava', 'MOLODETS'], goodWord = goodWords[Math.floor(Math.random() * goodWords.length)];
         if (this.age <= 18) {
-            var additionalWord = this.profession ? ",".concat(goodWordArray[0], " \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0448\u044C") : ', и безработный';
+            var additionalWord = this.profession ? ",".concat(goodWords[0], " \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0448\u044C") : ', и безработный';
             console.log("".concat(this.name, " \u0435\u0449\u0435 \u043F\u0438\u0441\u044C\u043A\u0430 \u043D\u0435 \u0432\u044B\u0440\u043E\u0441\u043B\u0430 ").concat(additionalWord));
         }
         if (!this.age || !this.profession) {

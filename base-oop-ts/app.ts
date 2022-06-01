@@ -13,11 +13,11 @@ class User {
   }
 
   public PrintMotivationWord() {
-    const goodWordArray: string[] = ['Good boy', 'Like u', 'krasava', 'MOLODETS'],
-          goodWord: string = goodWordArray[Math.floor(Math.random() * goodWordArray.length)];
+    const goodWords: string[] = ['Good boy', 'Like u', 'krasava', 'MOLODETS'],
+          goodWord: string = goodWords[Math.floor(Math.random() * goodWords.length)];
 
     if (this.age <= 18) {
-      const additionalWord: string = this.profession ? `,${goodWordArray[0]} работаешь` : ', и безработный';
+      const additionalWord: string = this.profession ? `,${goodWords[0]} работаешь` : ', и безработный';
       console.log(`${this.name} еще писька не выросла ${additionalWord}`);
     }
 
